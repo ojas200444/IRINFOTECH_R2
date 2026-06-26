@@ -75,7 +75,7 @@ class Settings(BaseSettings):
 
     # ── AI Models ───────────────────────────────────────────
     # embedding_model — Google model used to create text embeddings
-    embedding_model: str = "text-embedding-004"
+    embedding_model: str = "gemini-embedding-2"
     # llm_model — Google Gemini model used for answer generation
     llm_model: str = "gemini-2.5-flash"
 
