@@ -1,0 +1,14 @@
+__pycache__
+*.pyc
+*.pyo
+.git
+.gitignore
+.env
+venv/
+.venv/
+*.log
+.pytest_cache/
+chroma_data/
+uploads/
+*.db
+.DS_Store

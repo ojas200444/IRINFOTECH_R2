@@ -1,0 +1,1629 @@
+2026-06-25 15:27:06 | INFO     | app.main | ============================================================
+2026-06-25 15:27:06 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 15:27:06 | INFO     | app.main |    Debug mode: False
+2026-06-25 15:27:06 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 15:27:06 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 15:27:06 | INFO     | app.main | ============================================================
+2026-06-25 15:27:06 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 15:27:06 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 15:27:06 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 15:27:06 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 15:29:44 | INFO     | app.main |    Debug mode: False
+2026-06-25 15:29:44 | INFO     | app.main |    Database:   sqlite:///./test_rag_assistant.db
+2026-06-25 15:29:44 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 15:29:44 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 15:29:44 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.routers.qa | POST /qa/ask — Question: 'What is in the PDF?...' (stream=False, session=None)
+2026-06-25 15:29:44 | INFO     | app.routers.qa | Created new chat session: 3ec3de8b-a71b-4956-8129-7b7126c98445
+2026-06-25 15:29:44 | INFO     | app.routers.qa | Loaded 0 messages from session 3ec3de8b-a71b-4956-8129-7b7126c98445
+2026-06-25 15:29:44 | ERROR    | app.routers.qa | ❌ RAG pipeline error: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/app/routers/qa.py", line 250, in ask_question
+    result = await rag_service.ask(
+             ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2026-06-25 15:29:44 | WARNING  | app.main | HTTP 500 on /qa/ask: Failed to generate answer: object dict can't be used in 'await' expression
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 15:29:44 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 15:29:44 | INFO     | app.main |    Debug mode: False
+2026-06-25 15:29:44 | INFO     | app.main |    Database:   sqlite:///./test_rag_assistant.db
+2026-06-25 15:29:44 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 15:29:44 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 15:29:44 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.routers.documents | POST /documents/upload — Received 1 file(s)
+2026-06-25 15:29:44 | INFO     | app.routers.documents | Processing file: test.pdf
+2026-06-25 15:29:44 | INFO     | app.routers.documents | Saved uploaded file to: uploads/247d0b2f_test.pdf (22 bytes)
+2026-06-25 15:29:44 | INFO     | app.routers.documents | Extracted pages from test.pdf
+2026-06-25 15:29:44 | INFO     | app.routers.documents | Created 1 chunks from test.pdf
+2026-06-25 15:29:44 | INFO     | app.routers.documents | Generated 1 embeddings for test.pdf
+2026-06-25 15:29:44 | INFO     | app.routers.documents | Stored 1 vectors in ChromaDB for document 1
+2026-06-25 15:29:44 | INFO     | app.routers.documents | ✅ Successfully processed: test.pdf → Document ID: 1, Chunks: 1
+2026-06-25 15:29:44 | INFO     | app.routers.documents | Upload complete — 1 succeeded, 0 failed
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 15:29:44 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 15:29:44 | INFO     | app.main |    Debug mode: False
+2026-06-25 15:29:44 | INFO     | app.main |    Database:   sqlite:///./test_rag_assistant.db
+2026-06-25 15:29:44 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 15:29:44 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 15:29:44 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.routers.documents | POST /documents/upload — Received 1 file(s)
+2026-06-25 15:29:44 | WARNING  | app.routers.documents | Rejected non-PDF file: test.txt
+2026-06-25 15:29:44 | WARNING  | app.main | HTTP 400 on /documents/upload: Only PDF files are accepted. Got: 'test.txt'
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 15:29:44 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 15:29:44 | INFO     | app.main |    Debug mode: False
+2026-06-25 15:29:44 | INFO     | app.main |    Database:   sqlite:///./test_rag_assistant.db
+2026-06-25 15:29:44 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 15:29:44 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 15:29:44 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.routers.documents | GET /documents — Listing all documents
+2026-06-25 15:29:44 | INFO     | app.routers.documents | Returning 1 document(s)
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 15:29:44 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 15:29:44 | INFO     | app.main |    Debug mode: False
+2026-06-25 15:29:44 | INFO     | app.main |    Database:   sqlite:///./test_rag_assistant.db
+2026-06-25 15:29:44 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 15:29:44 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 15:29:44 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.routers.documents | POST /documents/upload — Received 1 file(s)
+2026-06-25 15:29:44 | INFO     | app.routers.documents | Processing file: delete_me.pdf
+2026-06-25 15:29:44 | INFO     | app.routers.documents | Saved uploaded file to: uploads/d87e929a_delete_me.pdf (22 bytes)
+2026-06-25 15:29:44 | INFO     | app.routers.documents | Extracted pages from delete_me.pdf
+2026-06-25 15:29:44 | INFO     | app.routers.documents | Created 1 chunks from delete_me.pdf
+2026-06-25 15:29:44 | INFO     | app.routers.documents | Generated 1 embeddings for delete_me.pdf
+2026-06-25 15:29:44 | INFO     | app.routers.documents | Stored 1 vectors in ChromaDB for document 2
+2026-06-25 15:29:44 | INFO     | app.routers.documents | ✅ Successfully processed: delete_me.pdf → Document ID: 2, Chunks: 1
+2026-06-25 15:29:44 | INFO     | app.routers.documents | Upload complete — 1 succeeded, 0 failed
+2026-06-25 15:29:44 | INFO     | app.routers.documents | GET /documents/2 — Fetching document details
+2026-06-25 15:29:44 | INFO     | app.routers.documents | DELETE /documents/2 — Deleting document
+2026-06-25 15:29:44 | INFO     | app.routers.documents | Deleted vectors for document 2 from ChromaDB
+2026-06-25 15:29:44 | INFO     | app.routers.documents | Deleted file: uploads/d87e929a_delete_me.pdf
+2026-06-25 15:29:44 | INFO     | app.routers.documents | ✅ Successfully deleted document 2
+2026-06-25 15:29:44 | INFO     | app.routers.documents | GET /documents/2 — Fetching document details
+2026-06-25 15:29:44 | WARNING  | app.routers.documents | Document not found: 2
+2026-06-25 15:29:44 | WARNING  | app.main | HTTP 404 on /documents/2: Document with ID 2 not found.
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 15:29:44 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 15:29:44 | INFO     | app.main |    Debug mode: False
+2026-06-25 15:29:44 | INFO     | app.main |    Database:   sqlite:///./test_rag_assistant.db
+2026-06-25 15:29:44 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 15:29:44 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 15:29:44 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.routers.qa | POST /qa/ask — Question: 'What is the key conclusion of the report?...' (stream=False, session=None)
+2026-06-25 15:29:44 | INFO     | app.routers.qa | Created new chat session: d8f4621c-2cb7-4174-843b-143d9110e410
+2026-06-25 15:29:44 | INFO     | app.routers.qa | Loaded 0 messages from session d8f4621c-2cb7-4174-843b-143d9110e410
+2026-06-25 15:29:44 | ERROR    | app.routers.qa | ❌ RAG pipeline error: object dict can't be used in 'await' expression
+Traceback (most recent call last):
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/app/routers/qa.py", line 250, in ask_question
+    result = await rag_service.ask(
+             ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object dict can't be used in 'await' expression
+2026-06-25 15:29:44 | WARNING  | app.main | HTTP 500 on /qa/ask: Failed to generate answer: object dict can't be used in 'await' expression
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 15:29:44 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 15:29:44 | INFO     | app.main |    Debug mode: False
+2026-06-25 15:29:44 | INFO     | app.main |    Database:   sqlite:///./test_rag_assistant.db
+2026-06-25 15:29:44 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 15:29:44 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 15:29:44 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.routers.qa | POST /qa/ask — Question: 'Can you summarize this document?...' (stream=True, session=None)
+2026-06-25 15:29:44 | INFO     | app.routers.qa | Created new chat session: 7cb1e16e-d535-4f91-b2c0-efdfcac7791c
+2026-06-25 15:29:44 | INFO     | app.routers.qa | Loaded 0 messages from session 7cb1e16e-d535-4f91-b2c0-efdfcac7791c
+2026-06-25 15:29:44 | INFO     | app.routers.qa | Returning streaming SSE response
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:29:44 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 15:29:44 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 15:29:44 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 15:30:19 | INFO     | app.main |    Debug mode: False
+2026-06-25 15:30:19 | INFO     | app.main |    Database:   sqlite:///./test_rag_assistant.db
+2026-06-25 15:30:19 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 15:30:19 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 15:30:19 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.routers.qa | POST /qa/ask — Question: 'What is in the PDF?...' (stream=False, session=None)
+2026-06-25 15:30:19 | INFO     | app.routers.qa | Created new chat session: ce3ff809-0ae7-4685-b0f5-979d6b1ddfe3
+2026-06-25 15:30:19 | INFO     | app.routers.qa | Loaded 0 messages from session ce3ff809-0ae7-4685-b0f5-979d6b1ddfe3
+2026-06-25 15:30:19 | INFO     | app.routers.qa | ✅ Answer generated — 52 chars, 1 sources, session: ce3ff809-0ae7-4685-b0f5-979d6b1ddfe3
+2026-06-25 15:30:19 | INFO     | app.routers.chat | GET /chat/sessions — Listing all chat sessions
+2026-06-25 15:30:19 | INFO     | app.routers.chat | Returning 1 chat session(s)
+2026-06-25 15:30:19 | INFO     | app.routers.chat | GET /chat/sessions/ce3ff809-0ae7-4685-b0f5-979d6b1ddfe3 — Fetching session history
+2026-06-25 15:30:19 | INFO     | app.routers.chat | Returning 2 messages for session ce3ff809-0ae7-4685-b0f5-979d6b1ddfe3
+2026-06-25 15:30:19 | INFO     | app.routers.chat | DELETE /chat/sessions/ce3ff809-0ae7-4685-b0f5-979d6b1ddfe3 — Deleting session
+2026-06-25 15:30:19 | INFO     | app.routers.chat | ✅ Deleted chat session: ce3ff809-0ae7-4685-b0f5-979d6b1ddfe3
+2026-06-25 15:30:19 | INFO     | app.routers.chat | GET /chat/sessions/ce3ff809-0ae7-4685-b0f5-979d6b1ddfe3 — Fetching session history
+2026-06-25 15:30:19 | WARNING  | app.routers.chat | Chat session not found: ce3ff809-0ae7-4685-b0f5-979d6b1ddfe3
+2026-06-25 15:30:19 | WARNING  | app.main | HTTP 404 on /chat/sessions/ce3ff809-0ae7-4685-b0f5-979d6b1ddfe3: Chat session 'ce3ff809-0ae7-4685-b0f5-979d6b1ddfe3' not found.
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 15:30:19 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 15:30:19 | INFO     | app.main |    Debug mode: False
+2026-06-25 15:30:19 | INFO     | app.main |    Database:   sqlite:///./test_rag_assistant.db
+2026-06-25 15:30:19 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 15:30:19 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 15:30:19 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.routers.documents | POST /documents/upload — Received 1 file(s)
+2026-06-25 15:30:19 | INFO     | app.routers.documents | Processing file: test.pdf
+2026-06-25 15:30:19 | INFO     | app.routers.documents | Saved uploaded file to: uploads/f1d9b0a0_test.pdf (22 bytes)
+2026-06-25 15:30:19 | INFO     | app.routers.documents | Extracted pages from test.pdf
+2026-06-25 15:30:19 | INFO     | app.routers.documents | Created 1 chunks from test.pdf
+2026-06-25 15:30:19 | INFO     | app.routers.documents | Generated 1 embeddings for test.pdf
+2026-06-25 15:30:19 | INFO     | app.routers.documents | Stored 1 vectors in ChromaDB for document 1
+2026-06-25 15:30:19 | INFO     | app.routers.documents | ✅ Successfully processed: test.pdf → Document ID: 1, Chunks: 1
+2026-06-25 15:30:19 | INFO     | app.routers.documents | Upload complete — 1 succeeded, 0 failed
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 15:30:19 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 15:30:19 | INFO     | app.main |    Debug mode: False
+2026-06-25 15:30:19 | INFO     | app.main |    Database:   sqlite:///./test_rag_assistant.db
+2026-06-25 15:30:19 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 15:30:19 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 15:30:19 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.routers.documents | POST /documents/upload — Received 1 file(s)
+2026-06-25 15:30:19 | WARNING  | app.routers.documents | Rejected non-PDF file: test.txt
+2026-06-25 15:30:19 | WARNING  | app.main | HTTP 400 on /documents/upload: Only PDF files are accepted. Got: 'test.txt'
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 15:30:19 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 15:30:19 | INFO     | app.main |    Debug mode: False
+2026-06-25 15:30:19 | INFO     | app.main |    Database:   sqlite:///./test_rag_assistant.db
+2026-06-25 15:30:19 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 15:30:19 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 15:30:19 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.routers.documents | GET /documents — Listing all documents
+2026-06-25 15:30:19 | INFO     | app.routers.documents | Returning 1 document(s)
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 15:30:19 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 15:30:19 | INFO     | app.main |    Debug mode: False
+2026-06-25 15:30:19 | INFO     | app.main |    Database:   sqlite:///./test_rag_assistant.db
+2026-06-25 15:30:19 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 15:30:19 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 15:30:19 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.routers.documents | POST /documents/upload — Received 1 file(s)
+2026-06-25 15:30:19 | INFO     | app.routers.documents | Processing file: delete_me.pdf
+2026-06-25 15:30:19 | INFO     | app.routers.documents | Saved uploaded file to: uploads/18fe0102_delete_me.pdf (22 bytes)
+2026-06-25 15:30:19 | INFO     | app.routers.documents | Extracted pages from delete_me.pdf
+2026-06-25 15:30:19 | INFO     | app.routers.documents | Created 1 chunks from delete_me.pdf
+2026-06-25 15:30:19 | INFO     | app.routers.documents | Generated 1 embeddings for delete_me.pdf
+2026-06-25 15:30:19 | INFO     | app.routers.documents | Stored 1 vectors in ChromaDB for document 2
+2026-06-25 15:30:19 | INFO     | app.routers.documents | ✅ Successfully processed: delete_me.pdf → Document ID: 2, Chunks: 1
+2026-06-25 15:30:19 | INFO     | app.routers.documents | Upload complete — 1 succeeded, 0 failed
+2026-06-25 15:30:19 | INFO     | app.routers.documents | GET /documents/2 — Fetching document details
+2026-06-25 15:30:19 | INFO     | app.routers.documents | DELETE /documents/2 — Deleting document
+2026-06-25 15:30:19 | INFO     | app.routers.documents | Deleted vectors for document 2 from ChromaDB
+2026-06-25 15:30:19 | INFO     | app.routers.documents | Deleted file: uploads/18fe0102_delete_me.pdf
+2026-06-25 15:30:19 | INFO     | app.routers.documents | ✅ Successfully deleted document 2
+2026-06-25 15:30:19 | INFO     | app.routers.documents | GET /documents/2 — Fetching document details
+2026-06-25 15:30:19 | WARNING  | app.routers.documents | Document not found: 2
+2026-06-25 15:30:19 | WARNING  | app.main | HTTP 404 on /documents/2: Document with ID 2 not found.
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 15:30:19 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 15:30:19 | INFO     | app.main |    Debug mode: False
+2026-06-25 15:30:19 | INFO     | app.main |    Database:   sqlite:///./test_rag_assistant.db
+2026-06-25 15:30:19 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 15:30:19 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 15:30:19 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.routers.qa | POST /qa/ask — Question: 'What is the key conclusion of the report?...' (stream=False, session=None)
+2026-06-25 15:30:19 | INFO     | app.routers.qa | Created new chat session: 43bb9444-bb41-4333-b4b3-188429f9fcd6
+2026-06-25 15:30:19 | INFO     | app.routers.qa | Loaded 0 messages from session 43bb9444-bb41-4333-b4b3-188429f9fcd6
+2026-06-25 15:30:19 | INFO     | app.routers.qa | ✅ Answer generated — 52 chars, 1 sources, session: 43bb9444-bb41-4333-b4b3-188429f9fcd6
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 15:30:19 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 15:30:19 | INFO     | app.main |    Debug mode: False
+2026-06-25 15:30:19 | INFO     | app.main |    Database:   sqlite:///./test_rag_assistant.db
+2026-06-25 15:30:19 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 15:30:19 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 15:30:19 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.routers.qa | POST /qa/ask — Question: 'Can you summarize this document?...' (stream=True, session=None)
+2026-06-25 15:30:19 | INFO     | app.routers.qa | Created new chat session: a9f7b2a4-a7fe-4079-a447-b8fb3fc18943
+2026-06-25 15:30:19 | INFO     | app.routers.qa | Loaded 0 messages from session a9f7b2a4-a7fe-4079-a447-b8fb3fc18943
+2026-06-25 15:30:19 | INFO     | app.routers.qa | Returning streaming SSE response
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 15:30:19 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 15:30:19 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 15:30:19 | INFO     | app.main | ============================================================
+2026-06-25 16:12:23 | INFO     | app.main | ============================================================
+2026-06-25 16:12:23 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:12:23 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:12:23 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:12:23 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:12:23 | INFO     | app.main | ============================================================
+2026-06-25 16:12:23 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:12:23 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:12:23 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:12:23 | INFO     | app.main | ============================================================
+2026-06-25 16:14:58 | WARNING  | app.main | Validation error on /documents/upload: Validation error on field 'body → files → 0': Value error, Expected UploadFile, received: <class 'str'>
+2026-06-25 16:14:58 | ERROR    | app.main | Unhandled exception on /documents/upload: Object of type ValueError is not JSON serializable
+Traceback (most recent call last):
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/routing.py", line 136, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/routing.py", line 739, in app
+    raise validation_error
+fastapi.exceptions.RequestValidationError: 1 validation error:
+  {'type': 'value_error', 'loc': ('body', 'files', 0), 'msg': "Value error, Expected UploadFile, received: <class 'str'>", 'input': 'Ä¤ÍßÎìØË³gëêb\x13@¶6\tO×Hp«Ò\x10', 'ctx': {'error': ValueError("Expected UploadFile, received: <class 'str'>")}}
+
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/app/routers/documents.py", line 78, in upload_documents
+    POST /documents/upload
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/middleware/cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/middleware/cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/routing.py", line 2531, in app
+    await route.handle(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/routing.py", line 1700, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/routing.py", line 2586, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/routing.py", line 1720, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/routing.py", line 1239, in handle
+    await app(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/routing.py", line 150, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 59, in wrapped_app
+    response = await handler(conn, exc)  # type: ignore[arg-type]
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/app/main.py", line 189, in validation_exception_handler
+    return JSONResponse(
+           ^^^^^^^^^^^^^
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/responses.py", line 192, in __init__
+    super().__init__(content, status_code, headers, media_type, background)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/responses.py", line 45, in __init__
+    self.body = self.render(content)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/responses.py", line 195, in render
+    return json.dumps(
+           ^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.14_3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.14_3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.14_3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.14_3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ValueError is not JSON serializable
+2026-06-25 16:15:02 | WARNING  | app.main | Validation error on /documents/upload: Validation error on field 'body → files → 0': Value error, Expected UploadFile, received: <class 'str'>
+2026-06-25 16:15:02 | ERROR    | app.main | Unhandled exception on /documents/upload: Object of type ValueError is not JSON serializable
+Traceback (most recent call last):
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/routing.py", line 136, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/routing.py", line 739, in app
+    raise validation_error
+fastapi.exceptions.RequestValidationError: 1 validation error:
+  {'type': 'value_error', 'loc': ('body', 'files', 0), 'msg': "Value error, Expected UploadFile, received: <class 'str'>", 'input': 'Ä¤ÍßÎìØË³gëêb\x13@¶6\tO×Hp«Ò\x10', 'ctx': {'error': ValueError("Expected UploadFile, received: <class 'str'>")}}
+
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/app/routers/documents.py", line 78, in upload_documents
+    POST /documents/upload
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/middleware/cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/middleware/cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/routing.py", line 2531, in app
+    await route.handle(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/routing.py", line 1700, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/routing.py", line 2586, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/routing.py", line 1720, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/routing.py", line 1239, in handle
+    await app(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/routing.py", line 150, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 59, in wrapped_app
+    response = await handler(conn, exc)  # type: ignore[arg-type]
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/app/main.py", line 189, in validation_exception_handler
+    return JSONResponse(
+           ^^^^^^^^^^^^^
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/responses.py", line 192, in __init__
+    super().__init__(content, status_code, headers, media_type, background)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/responses.py", line 45, in __init__
+    self.body = self.render(content)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/responses.py", line 195, in render
+    return json.dumps(
+           ^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.14_3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.14_3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.14_3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.14_3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ValueError is not JSON serializable
+2026-06-25 16:16:27 | WARNING  | app.main | Validation error on /documents/upload: Validation error on field 'body → files → 0': Value error, Expected UploadFile, received: <class 'str'>
+2026-06-25 16:16:27 | ERROR    | app.main | Unhandled exception on /documents/upload: Object of type ValueError is not JSON serializable
+Traceback (most recent call last):
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/routing.py", line 136, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/routing.py", line 739, in app
+    raise validation_error
+fastapi.exceptions.RequestValidationError: 1 validation error:
+  {'type': 'value_error', 'loc': ('body', 'files', 0), 'msg': "Value error, Expected UploadFile, received: <class 'str'>", 'input': 'curl -X POST http://127.0.0.1:8000/documents/upload \\   -F "files=@/path/to/your/document.pdf"', 'ctx': {'error': ValueError("Expected UploadFile, received: <class 'str'>")}}
+
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/app/routers/documents.py", line 78, in upload_documents
+    POST /documents/upload
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/middleware/cors.py", line 96, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/middleware/cors.py", line 154, in simple_response
+    await self.app(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/routing.py", line 660, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/routing.py", line 2531, in app
+    await route.handle(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/routing.py", line 1700, in handle
+    await self.original_router.handle(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/routing.py", line 2586, in handle
+    await included_router._handle_selected(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/routing.py", line 1720, in _handle_selected
+    await original_route.handle(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/routing.py", line 1239, in handle
+    await app(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/fastapi/routing.py", line 150, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/_exception_handler.py", line 59, in wrapped_app
+    response = await handler(conn, exc)  # type: ignore[arg-type]
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/app/main.py", line 189, in validation_exception_handler
+    return JSONResponse(
+           ^^^^^^^^^^^^^
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/responses.py", line 192, in __init__
+    super().__init__(content, status_code, headers, media_type, background)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/responses.py", line 45, in __init__
+    self.body = self.render(content)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/venv/lib/python3.11/site-packages/starlette/responses.py", line 195, in render
+    return json.dumps(
+           ^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.14_3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.14_3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.14_3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.14_3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ValueError is not JSON serializable
+2026-06-25 16:16:58 | INFO     | app.routers.documents | GET /documents — Listing all documents
+2026-06-25 16:16:58 | INFO     | app.routers.documents | Returning 0 document(s)
+2026-06-25 16:16:59 | INFO     | app.routers.documents | GET /documents — Listing all documents
+2026-06-25 16:16:59 | INFO     | app.routers.documents | Returning 0 document(s)
+2026-06-25 16:20:46 | INFO     | app.main | ============================================================
+2026-06-25 16:20:46 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:20:46 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:20:46 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:20:46 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:20:46 | INFO     | app.main | ============================================================
+2026-06-25 16:20:46 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:20:46 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:20:46 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:20:46 | INFO     | app.main | ============================================================
+2026-06-25 16:20:47 | INFO     | app.main | ============================================================
+2026-06-25 16:20:47 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:20:47 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:20:47 | INFO     | app.main | ============================================================
+2026-06-25 16:20:48 | INFO     | app.main | ============================================================
+2026-06-25 16:20:48 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:20:48 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:20:48 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:20:48 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:20:48 | INFO     | app.main | ============================================================
+2026-06-25 16:20:48 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:20:48 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:20:48 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:20:48 | INFO     | app.main | ============================================================
+2026-06-25 16:20:49 | INFO     | app.main | ============================================================
+2026-06-25 16:20:49 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:20:49 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:20:49 | INFO     | app.main | ============================================================
+2026-06-25 16:20:50 | INFO     | app.main | ============================================================
+2026-06-25 16:20:50 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:20:50 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:20:50 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:20:50 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:20:50 | INFO     | app.main | ============================================================
+2026-06-25 16:20:50 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:20:50 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:20:50 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:20:50 | INFO     | app.main | ============================================================
+2026-06-25 16:20:50 | INFO     | app.main | ============================================================
+2026-06-25 16:20:50 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:20:50 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:20:50 | INFO     | app.main | ============================================================
+2026-06-25 16:20:52 | INFO     | app.main | ============================================================
+2026-06-25 16:20:52 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:20:52 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:20:52 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:20:52 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:20:52 | INFO     | app.main | ============================================================
+2026-06-25 16:20:52 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:20:52 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:20:52 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:20:52 | INFO     | app.main | ============================================================
+2026-06-25 16:20:52 | INFO     | app.main | ============================================================
+2026-06-25 16:20:52 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:20:52 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:20:52 | INFO     | app.main | ============================================================
+2026-06-25 16:20:53 | INFO     | app.main | ============================================================
+2026-06-25 16:20:53 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:20:53 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:20:53 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:20:53 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:20:53 | INFO     | app.main | ============================================================
+2026-06-25 16:20:53 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:20:53 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:20:53 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:20:53 | INFO     | app.main | ============================================================
+2026-06-25 16:20:54 | INFO     | app.main | ============================================================
+2026-06-25 16:20:54 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:20:54 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:20:54 | INFO     | app.main | ============================================================
+2026-06-25 16:20:55 | INFO     | app.main | ============================================================
+2026-06-25 16:20:55 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:20:55 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:20:55 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:20:55 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:20:55 | INFO     | app.main | ============================================================
+2026-06-25 16:20:55 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:20:55 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:20:55 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:20:55 | INFO     | app.main | ============================================================
+2026-06-25 16:20:55 | INFO     | app.main | ============================================================
+2026-06-25 16:20:55 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:20:55 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:20:55 | INFO     | app.main | ============================================================
+2026-06-25 16:20:56 | INFO     | app.main | ============================================================
+2026-06-25 16:20:56 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:20:56 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:20:56 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:20:56 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:20:56 | INFO     | app.main | ============================================================
+2026-06-25 16:20:56 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:20:56 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:20:56 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:20:56 | INFO     | app.main | ============================================================
+2026-06-25 16:20:56 | INFO     | app.main | ============================================================
+2026-06-25 16:20:56 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:20:56 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:20:56 | INFO     | app.main | ============================================================
+2026-06-25 16:20:57 | INFO     | app.main | ============================================================
+2026-06-25 16:20:57 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:20:57 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:20:57 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:20:57 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:20:57 | INFO     | app.main | ============================================================
+2026-06-25 16:20:57 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:20:57 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:20:57 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:20:57 | INFO     | app.main | ============================================================
+2026-06-25 16:20:57 | INFO     | app.main | ============================================================
+2026-06-25 16:20:57 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:20:57 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:20:57 | INFO     | app.main | ============================================================
+2026-06-25 16:20:58 | INFO     | app.main | ============================================================
+2026-06-25 16:20:58 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:20:58 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:20:58 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:20:58 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:20:58 | INFO     | app.main | ============================================================
+2026-06-25 16:20:58 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:20:58 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:20:58 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:20:58 | INFO     | app.main | ============================================================
+2026-06-25 16:20:58 | INFO     | app.main | ============================================================
+2026-06-25 16:20:58 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:20:58 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:20:58 | INFO     | app.main | ============================================================
+2026-06-25 16:21:00 | INFO     | app.main | ============================================================
+2026-06-25 16:21:00 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:21:00 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:21:00 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:21:00 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:21:00 | INFO     | app.main | ============================================================
+2026-06-25 16:21:00 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:21:00 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:21:00 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:21:00 | INFO     | app.main | ============================================================
+2026-06-25 16:21:00 | INFO     | app.main | ============================================================
+2026-06-25 16:21:00 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:21:00 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:21:00 | INFO     | app.main | ============================================================
+2026-06-25 16:21:01 | INFO     | app.main | ============================================================
+2026-06-25 16:21:01 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:21:01 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:21:01 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:21:01 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:21:01 | INFO     | app.main | ============================================================
+2026-06-25 16:21:01 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:21:01 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:21:01 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:21:01 | INFO     | app.main | ============================================================
+2026-06-25 16:22:38 | INFO     | app.main | ============================================================
+2026-06-25 16:22:38 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:22:38 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:22:38 | INFO     | app.main | ============================================================
+2026-06-25 16:22:39 | INFO     | app.main | ============================================================
+2026-06-25 16:22:39 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:22:39 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:22:39 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:22:39 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:22:39 | INFO     | app.main | ============================================================
+2026-06-25 16:22:39 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:22:39 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:22:39 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:22:39 | INFO     | app.main | ============================================================
+2026-06-25 16:22:40 | INFO     | app.main | ============================================================
+2026-06-25 16:22:40 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:22:40 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:22:40 | INFO     | app.main | ============================================================
+2026-06-25 16:22:41 | INFO     | app.main | ============================================================
+2026-06-25 16:22:41 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:22:41 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:22:41 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:22:41 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:22:41 | INFO     | app.main | ============================================================
+2026-06-25 16:22:41 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:22:41 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:22:41 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:22:41 | INFO     | app.main | ============================================================
+2026-06-25 16:22:43 | INFO     | app.main | ============================================================
+2026-06-25 16:22:43 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:22:43 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:22:43 | INFO     | app.main | ============================================================
+2026-06-25 16:22:44 | INFO     | app.main | ============================================================
+2026-06-25 16:22:44 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:22:44 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:22:44 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:22:44 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:22:44 | INFO     | app.main | ============================================================
+2026-06-25 16:22:44 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:22:44 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:22:44 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:22:44 | INFO     | app.main | ============================================================
+2026-06-25 16:22:44 | INFO     | app.main | ============================================================
+2026-06-25 16:22:44 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:22:44 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:22:44 | INFO     | app.main | ============================================================
+2026-06-25 16:22:45 | INFO     | app.main | ============================================================
+2026-06-25 16:22:45 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:22:45 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:22:45 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:22:45 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:22:45 | INFO     | app.main | ============================================================
+2026-06-25 16:22:45 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:22:45 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:22:45 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:22:45 | INFO     | app.main | ============================================================
+2026-06-25 16:22:45 | INFO     | app.main | ============================================================
+2026-06-25 16:22:45 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:22:45 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:22:45 | INFO     | app.main | ============================================================
+2026-06-25 16:22:46 | INFO     | app.main | ============================================================
+2026-06-25 16:22:46 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:22:46 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:22:46 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:22:46 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:22:46 | INFO     | app.main | ============================================================
+2026-06-25 16:22:46 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:22:46 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:22:46 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:22:46 | INFO     | app.main | ============================================================
+2026-06-25 16:22:46 | INFO     | app.main | ============================================================
+2026-06-25 16:22:46 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:22:46 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:22:46 | INFO     | app.main | ============================================================
+2026-06-25 16:22:47 | INFO     | app.main | ============================================================
+2026-06-25 16:22:47 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:22:47 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:22:47 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:22:47 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:22:47 | INFO     | app.main | ============================================================
+2026-06-25 16:22:47 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:22:47 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:22:47 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:22:47 | INFO     | app.main | ============================================================
+2026-06-25 16:22:47 | INFO     | app.main | ============================================================
+2026-06-25 16:22:47 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:22:47 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:22:47 | INFO     | app.main | ============================================================
+2026-06-25 16:22:48 | INFO     | app.main | ============================================================
+2026-06-25 16:22:48 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:22:48 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:22:48 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:22:48 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:22:48 | INFO     | app.main | ============================================================
+2026-06-25 16:22:48 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:22:48 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:22:48 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:22:48 | INFO     | app.main | ============================================================
+2026-06-25 16:22:48 | INFO     | app.main | ============================================================
+2026-06-25 16:22:48 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:22:48 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:22:48 | INFO     | app.main | ============================================================
+2026-06-25 16:22:49 | INFO     | app.main | ============================================================
+2026-06-25 16:22:49 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:22:49 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:22:49 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:22:49 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:22:49 | INFO     | app.main | ============================================================
+2026-06-25 16:22:49 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:22:49 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:22:49 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:22:49 | INFO     | app.main | ============================================================
+2026-06-25 16:23:27 | INFO     | app.main | ============================================================
+2026-06-25 16:23:27 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:23:27 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:23:27 | INFO     | app.main | ============================================================
+2026-06-25 16:23:29 | INFO     | app.main | ============================================================
+2026-06-25 16:23:29 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:23:29 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:23:29 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:23:29 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:23:29 | INFO     | app.main | ============================================================
+2026-06-25 16:23:29 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:23:29 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:23:29 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:23:29 | INFO     | app.main | ============================================================
+2026-06-25 16:38:51 | INFO     | app.main | ============================================================
+2026-06-25 16:38:51 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:38:51 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:38:51 | INFO     | app.main | ============================================================
+2026-06-25 16:38:52 | INFO     | app.main | ============================================================
+2026-06-25 16:38:52 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:38:52 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:38:52 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:38:52 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:38:52 | INFO     | app.main | ============================================================
+2026-06-25 16:38:52 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:38:52 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:38:52 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:38:52 | INFO     | app.main | ============================================================
+2026-06-25 16:38:52 | INFO     | app.main | ============================================================
+2026-06-25 16:38:52 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:38:52 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:38:52 | INFO     | app.main | ============================================================
+2026-06-25 16:38:53 | INFO     | app.main | ============================================================
+2026-06-25 16:38:53 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:38:53 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:38:53 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:38:53 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:38:53 | INFO     | app.main | ============================================================
+2026-06-25 16:38:53 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:38:53 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:38:53 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:38:53 | INFO     | app.main | ============================================================
+2026-06-25 16:38:54 | INFO     | app.main | ============================================================
+2026-06-25 16:38:54 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:38:54 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:38:54 | INFO     | app.main | ============================================================
+2026-06-25 16:38:54 | INFO     | app.main | ============================================================
+2026-06-25 16:38:54 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:38:54 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:38:54 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:38:54 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:38:54 | INFO     | app.main | ============================================================
+2026-06-25 16:38:54 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:38:54 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:38:54 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:38:54 | INFO     | app.main | ============================================================
+2026-06-25 16:38:55 | INFO     | app.main | ============================================================
+2026-06-25 16:38:55 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:38:55 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:38:55 | INFO     | app.main | ============================================================
+2026-06-25 16:38:56 | INFO     | app.main | ============================================================
+2026-06-25 16:38:56 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:38:56 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:38:56 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:38:56 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:38:56 | INFO     | app.main | ============================================================
+2026-06-25 16:38:56 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:38:56 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:38:56 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:38:56 | INFO     | app.main | ============================================================
+2026-06-25 16:38:56 | INFO     | app.main | ============================================================
+2026-06-25 16:38:56 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:38:56 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:38:56 | INFO     | app.main | ============================================================
+2026-06-25 16:38:57 | INFO     | app.main | ============================================================
+2026-06-25 16:38:57 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:38:57 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:38:57 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:38:57 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:38:57 | INFO     | app.main | ============================================================
+2026-06-25 16:38:57 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:38:57 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:38:57 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:38:57 | INFO     | app.main | ============================================================
+2026-06-25 16:38:57 | INFO     | app.main | ============================================================
+2026-06-25 16:38:57 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:38:57 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:38:57 | INFO     | app.main | ============================================================
+2026-06-25 16:38:58 | INFO     | app.main | ============================================================
+2026-06-25 16:38:58 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:38:58 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:38:58 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:38:58 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:38:58 | INFO     | app.main | ============================================================
+2026-06-25 16:38:58 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:38:58 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:38:58 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:38:58 | INFO     | app.main | ============================================================
+2026-06-25 16:38:58 | INFO     | app.main | ============================================================
+2026-06-25 16:38:58 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:38:58 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:38:58 | INFO     | app.main | ============================================================
+2026-06-25 16:38:59 | INFO     | app.main | ============================================================
+2026-06-25 16:38:59 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:38:59 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:38:59 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:38:59 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:38:59 | INFO     | app.main | ============================================================
+2026-06-25 16:38:59 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:38:59 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:38:59 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:38:59 | INFO     | app.main | ============================================================
+2026-06-25 16:38:59 | INFO     | app.main | ============================================================
+2026-06-25 16:38:59 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:38:59 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:38:59 | INFO     | app.main | ============================================================
+2026-06-25 16:39:00 | INFO     | app.main | ============================================================
+2026-06-25 16:39:00 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:39:00 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:39:00 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:39:00 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:39:00 | INFO     | app.main | ============================================================
+2026-06-25 16:39:00 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:39:00 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:39:00 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:39:00 | INFO     | app.main | ============================================================
+2026-06-25 16:39:00 | INFO     | app.main | ============================================================
+2026-06-25 16:39:00 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:39:00 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:39:00 | INFO     | app.main | ============================================================
+2026-06-25 16:39:01 | INFO     | app.main | ============================================================
+2026-06-25 16:39:01 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:39:01 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:39:01 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:39:01 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:39:01 | INFO     | app.main | ============================================================
+2026-06-25 16:39:01 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:39:01 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:39:01 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:39:01 | INFO     | app.main | ============================================================
+2026-06-25 16:39:01 | INFO     | app.main | ============================================================
+2026-06-25 16:39:01 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:39:01 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:39:01 | INFO     | app.main | ============================================================
+2026-06-25 16:39:03 | INFO     | app.main | ============================================================
+2026-06-25 16:39:03 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:39:03 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:39:03 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:39:03 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:39:03 | INFO     | app.main | ============================================================
+2026-06-25 16:39:03 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:39:03 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:39:03 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:39:03 | INFO     | app.main | ============================================================
+2026-06-25 16:39:03 | INFO     | app.main | ============================================================
+2026-06-25 16:39:03 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:39:03 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:39:03 | INFO     | app.main | ============================================================
+2026-06-25 16:39:04 | INFO     | app.main | ============================================================
+2026-06-25 16:39:04 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:39:04 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:39:04 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:39:04 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:39:04 | INFO     | app.main | ============================================================
+2026-06-25 16:39:04 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:39:04 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:39:04 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:39:04 | INFO     | app.main | ============================================================
+2026-06-25 16:39:04 | INFO     | app.main | ============================================================
+2026-06-25 16:39:04 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:39:04 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:39:04 | INFO     | app.main | ============================================================
+2026-06-25 16:39:05 | INFO     | app.main | ============================================================
+2026-06-25 16:39:05 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:39:05 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:39:05 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:39:05 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:39:05 | INFO     | app.main | ============================================================
+2026-06-25 16:39:05 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:39:05 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:39:05 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:39:05 | INFO     | app.main | ============================================================
+2026-06-25 16:39:05 | INFO     | app.main | ============================================================
+2026-06-25 16:39:05 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:39:05 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:39:05 | INFO     | app.main | ============================================================
+2026-06-25 16:39:06 | INFO     | app.main | ============================================================
+2026-06-25 16:39:06 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:39:06 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:39:06 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:39:06 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:39:06 | INFO     | app.main | ============================================================
+2026-06-25 16:39:06 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:39:06 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:39:06 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:39:06 | INFO     | app.main | ============================================================
+2026-06-25 16:39:07 | INFO     | app.main | ============================================================
+2026-06-25 16:39:07 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:39:07 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:39:07 | INFO     | app.main | ============================================================
+2026-06-25 16:39:08 | INFO     | app.main | ============================================================
+2026-06-25 16:39:08 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:39:08 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:39:08 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:39:08 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:39:08 | INFO     | app.main | ============================================================
+2026-06-25 16:39:08 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:39:08 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:39:08 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:39:08 | INFO     | app.main | ============================================================
+2026-06-25 16:39:08 | INFO     | app.main | ============================================================
+2026-06-25 16:39:08 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:39:08 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:39:08 | INFO     | app.main | ============================================================
+2026-06-25 16:39:09 | INFO     | app.main | ============================================================
+2026-06-25 16:39:09 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:39:09 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:39:09 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:39:09 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:39:09 | INFO     | app.main | ============================================================
+2026-06-25 16:39:09 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:39:09 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:39:09 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:39:09 | INFO     | app.main | ============================================================
+2026-06-25 16:39:11 | INFO     | app.main | ============================================================
+2026-06-25 16:39:11 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:39:11 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:39:11 | INFO     | app.main | ============================================================
+2026-06-25 16:39:12 | INFO     | app.main | ============================================================
+2026-06-25 16:39:12 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:39:12 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:39:12 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:39:12 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:39:12 | INFO     | app.main | ============================================================
+2026-06-25 16:39:12 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:39:12 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:39:12 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:39:12 | INFO     | app.main | ============================================================
+2026-06-25 16:39:18 | INFO     | app.main | ============================================================
+2026-06-25 16:39:18 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:39:18 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:39:18 | INFO     | app.main | ============================================================
+2026-06-25 16:39:19 | INFO     | app.main | ============================================================
+2026-06-25 16:39:19 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:39:19 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:39:19 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:39:19 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:39:19 | INFO     | app.main | ============================================================
+2026-06-25 16:39:19 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:39:19 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:39:19 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:39:19 | INFO     | app.main | ============================================================
+2026-06-25 16:39:50 | INFO     | app.routers.documents | GET /documents — Listing all documents
+2026-06-25 16:39:50 | INFO     | app.routers.documents | Returning 0 document(s)
+2026-06-25 16:40:08 | INFO     | app.routers.documents | GET /documents/1 — Fetching document details
+2026-06-25 16:40:08 | WARNING  | app.routers.documents | Document not found: 1
+2026-06-25 16:40:08 | WARNING  | app.main | HTTP 404 on /documents/1: Document with ID 1 not found.
+2026-06-25 16:40:48 | INFO     | app.routers.chat | GET /chat/sessions — Listing all chat sessions
+2026-06-25 16:40:48 | INFO     | app.routers.chat | Returning 0 chat session(s)
+2026-06-25 16:41:02 | INFO     | app.routers.chat | DELETE /chat/sessions/1 — Deleting session
+2026-06-25 16:41:02 | WARNING  | app.routers.chat | Chat session not found for deletion: 1
+2026-06-25 16:41:02 | WARNING  | app.main | HTTP 404 on /chat/sessions/1: Chat session '1' not found.
+2026-06-25 16:42:47 | INFO     | app.main | ============================================================
+2026-06-25 16:42:47 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:42:47 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:42:47 | INFO     | app.main | ============================================================
+2026-06-25 16:42:48 | INFO     | app.main | ============================================================
+2026-06-25 16:42:48 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:42:48 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:42:48 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:42:48 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:42:48 | INFO     | app.main | ============================================================
+2026-06-25 16:42:48 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:42:48 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:42:48 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:42:48 | INFO     | app.main | ============================================================
+2026-06-25 16:42:48 | INFO     | app.main | ============================================================
+2026-06-25 16:42:48 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:42:48 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:42:48 | INFO     | app.main | ============================================================
+2026-06-25 16:42:49 | INFO     | app.main | ============================================================
+2026-06-25 16:42:49 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:42:49 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:42:49 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:42:49 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:42:49 | INFO     | app.main | ============================================================
+2026-06-25 16:42:49 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:42:49 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:42:49 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:42:49 | INFO     | app.main | ============================================================
+2026-06-25 16:42:49 | INFO     | app.main | ============================================================
+2026-06-25 16:42:49 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:42:49 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:42:49 | INFO     | app.main | ============================================================
+2026-06-25 16:42:50 | INFO     | app.main | ============================================================
+2026-06-25 16:42:50 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:42:50 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:42:50 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:42:50 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:42:50 | INFO     | app.main | ============================================================
+2026-06-25 16:42:50 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:42:50 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:42:50 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:42:50 | INFO     | app.main | ============================================================
+2026-06-25 16:42:50 | INFO     | app.main | ============================================================
+2026-06-25 16:42:50 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:42:50 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:42:50 | INFO     | app.main | ============================================================
+2026-06-25 16:42:51 | INFO     | app.main | ============================================================
+2026-06-25 16:42:51 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:42:51 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:42:51 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:42:51 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:42:51 | INFO     | app.main | ============================================================
+2026-06-25 16:42:51 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:42:51 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:42:51 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:42:51 | INFO     | app.main | ============================================================
+2026-06-25 16:42:51 | INFO     | app.main | ============================================================
+2026-06-25 16:42:51 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:42:51 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:42:51 | INFO     | app.main | ============================================================
+2026-06-25 16:42:52 | INFO     | app.main | ============================================================
+2026-06-25 16:42:52 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:42:52 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:42:52 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:42:52 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:42:52 | INFO     | app.main | ============================================================
+2026-06-25 16:42:52 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:42:52 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:42:52 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:42:52 | INFO     | app.main | ============================================================
+2026-06-25 16:42:52 | INFO     | app.main | ============================================================
+2026-06-25 16:42:52 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:42:52 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:42:52 | INFO     | app.main | ============================================================
+2026-06-25 16:42:53 | INFO     | app.main | ============================================================
+2026-06-25 16:42:53 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:42:53 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:42:53 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:42:53 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:42:53 | INFO     | app.main | ============================================================
+2026-06-25 16:42:53 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:42:53 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:42:53 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:42:53 | INFO     | app.main | ============================================================
+2026-06-25 16:42:53 | INFO     | app.main | ============================================================
+2026-06-25 16:42:53 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:42:53 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:42:53 | INFO     | app.main | ============================================================
+2026-06-25 16:42:54 | INFO     | app.main | ============================================================
+2026-06-25 16:42:54 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:42:54 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:42:54 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:42:54 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:42:54 | INFO     | app.main | ============================================================
+2026-06-25 16:42:54 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:42:54 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:42:54 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:42:54 | INFO     | app.main | ============================================================
+2026-06-25 16:48:56 | INFO     | app.main | ============================================================
+2026-06-25 16:48:56 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:48:56 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:48:56 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:48:56 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:48:56 | INFO     | app.main | ============================================================
+2026-06-25 16:48:57 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:48:57 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:48:57 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:48:57 | INFO     | app.main | ============================================================
+2026-06-25 16:54:01 | INFO     | app.main | ============================================================
+2026-06-25 16:54:01 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 16:54:01 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 16:54:01 | INFO     | app.main | ============================================================
+2026-06-25 16:54:02 | INFO     | app.main | ============================================================
+2026-06-25 16:54:02 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 16:54:02 | INFO     | app.main |    Debug mode: False
+2026-06-25 16:54:02 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 16:54:02 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 16:54:02 | INFO     | app.main | ============================================================
+2026-06-25 16:54:02 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 16:54:02 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 16:54:02 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 16:54:02 | INFO     | app.main | ============================================================
+2026-06-25 16:56:12 | INFO     | app.routers.documents | POST /documents/upload — Received 1 file(s)
+2026-06-25 16:56:13 | INFO     | app.routers.documents | Processing file: Ojal Biodata.pdf
+2026-06-25 16:56:13 | INFO     | app.routers.documents | Saved uploaded file to: uploads/a279227f_Ojal Biodata.pdf (5466781 bytes)
+2026-06-25 16:56:13 | INFO     | app.routers.documents | Extracted pages from Ojal Biodata.pdf
+2026-06-25 16:56:13 | INFO     | app.routers.documents | Created 3 chunks from Ojal Biodata.pdf
+2026-06-25 16:56:13 | ERROR    | app.routers.documents | ❌ Failed to process Ojal Biodata.pdf: Embedding generation failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/text-embedding-004 is not found for API version v1beta, or is not supported for embedContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+Traceback (most recent call last):
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/app/services/embedding_service.py", line 175, in _embed_with_retry
+    response = self._client.models.embed_content(
+        model=self._model,
+        contents=texts,
+    )
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/venv/lib/python3.14/site-packages/google/genai/models.py", line 6378, in embed_content
+    return self._embed_content(model=model, contents=contents, config=config)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/venv/lib/python3.14/site-packages/google/genai/models.py", line 5183, in _embed_content
+    response = self._api_client.request(
+        'post', path, request_dict, http_options
+    )
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/venv/lib/python3.14/site-packages/google/genai/_api_client.py", line 1618, in request
+    response = self._request(http_request, http_options, stream=False)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/venv/lib/python3.14/site-packages/google/genai/_api_client.py", line 1411, in _request
+    return self._retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/venv/lib/python3.14/site-packages/tenacity/__init__.py", line 470, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/venv/lib/python3.14/site-packages/tenacity/__init__.py", line 371, in iter
+    result = action(retry_state)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/venv/lib/python3.14/site-packages/tenacity/__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ~~~~~~~~~~~~~~~~~^^
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/venv/lib/python3.14/site-packages/tenacity/__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/concurrent/futures/_base.py", line 443, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/concurrent/futures/_base.py", line 395, in __get_result
+    raise self._exception
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/venv/lib/python3.14/site-packages/tenacity/__init__.py", line 473, in __call__
+    result = fn(*args, **kwargs)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/venv/lib/python3.14/site-packages/google/genai/_api_client.py", line 1388, in _request_once
+    errors.APIError.raise_for_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/venv/lib/python3.14/site-packages/google/genai/errors.py", line 155, in raise_for_response
+    cls.raise_error(response.status_code, response_json, response)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/venv/lib/python3.14/site-packages/google/genai/errors.py", line 184, in raise_error
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/text-embedding-004 is not found for API version v1beta, or is not supported for embedContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/app/routers/documents.py", line 151, in upload_documents
+    embeddings = embedding_service.generate_embeddings(
+        [chunk["text"] for chunk in chunks]
+    )
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/app/services/embedding_service.py", line 118, in generate_embeddings
+    batch_embeddings = self._embed_with_retry(batch)
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/app/services/embedding_service.py", line 212, in _embed_with_retry
+    raise RuntimeError(f"Embedding generation failed: {e}") from e
+RuntimeError: Embedding generation failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/text-embedding-004 is not found for API version v1beta, or is not supported for embedContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-06-25 16:56:13 | WARNING  | app.main | HTTP 500 on /documents/upload: All files failed to process. Check the server logs for details.
+2026-06-25 17:01:48 | INFO     | app.main | ============================================================
+2026-06-25 17:01:48 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 17:01:48 | INFO     | app.main |    Debug mode: False
+2026-06-25 17:01:48 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 17:01:48 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 17:01:48 | INFO     | app.main | ============================================================
+2026-06-25 17:01:48 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 17:01:48 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 17:01:48 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 17:01:48 | INFO     | app.main | ============================================================
+2026-06-25 17:43:28 | INFO     | app.routers.documents | POST /documents/upload — Received 1 file(s)
+2026-06-25 17:43:28 | INFO     | app.routers.documents | Processing file: Ojal Biodata.pdf
+2026-06-25 17:43:28 | INFO     | app.routers.documents | Saved uploaded file to: uploads/607f080c_Ojal Biodata.pdf (5466781 bytes)
+2026-06-25 17:43:28 | INFO     | app.routers.documents | Extracted pages from Ojal Biodata.pdf
+2026-06-25 17:43:28 | INFO     | app.routers.documents | Created 3 chunks from Ojal Biodata.pdf
+2026-06-25 17:43:29 | INFO     | app.routers.documents | Generated 1 embeddings for Ojal Biodata.pdf
+2026-06-25 17:43:29 | ERROR    | app.routers.documents | ❌ Failed to process Ojal Biodata.pdf: Mismatch: 3 chunks but 1 embeddings. These must be the same length.
+Traceback (most recent call last):
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/app/routers/documents.py", line 169, in upload_documents
+    vector_store.add_document(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        doc_id=document.id,
+        ^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        document_name=document.original_filename,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/app/services/vector_store.py", line 106, in add_document
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Mismatch: 3 chunks but 1 embeddings. These must be the same length.
+2026-06-25 17:43:29 | WARNING  | app.main | HTTP 500 on /documents/upload: All files failed to process. Check the server logs for details.
+2026-06-25 17:43:53 | INFO     | app.routers.documents | POST /documents/upload — Received 1 file(s)
+2026-06-25 17:43:53 | INFO     | app.routers.documents | Processing file: Ojal Biodata.pdf
+2026-06-25 17:43:53 | INFO     | app.routers.documents | Saved uploaded file to: uploads/ef5fc2c5_Ojal Biodata.pdf (5466781 bytes)
+2026-06-25 17:43:53 | INFO     | app.routers.documents | Extracted pages from Ojal Biodata.pdf
+2026-06-25 17:43:53 | INFO     | app.routers.documents | Created 3 chunks from Ojal Biodata.pdf
+2026-06-25 17:43:54 | INFO     | app.routers.documents | Generated 1 embeddings for Ojal Biodata.pdf
+2026-06-25 17:43:54 | ERROR    | app.routers.documents | ❌ Failed to process Ojal Biodata.pdf: Mismatch: 3 chunks but 1 embeddings. These must be the same length.
+Traceback (most recent call last):
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/app/routers/documents.py", line 169, in upload_documents
+    vector_store.add_document(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        doc_id=document.id,
+        ^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        document_name=document.original_filename,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/app/services/vector_store.py", line 106, in add_document
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Mismatch: 3 chunks but 1 embeddings. These must be the same length.
+2026-06-25 17:43:54 | WARNING  | app.main | HTTP 500 on /documents/upload: All files failed to process. Check the server logs for details.
+2026-06-25 17:59:50 | INFO     | app.main | ============================================================
+2026-06-25 17:59:50 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 17:59:50 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 17:59:50 | INFO     | app.main | ============================================================
+2026-06-25 17:59:52 | INFO     | app.main | ============================================================
+2026-06-25 17:59:52 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 17:59:52 | INFO     | app.main |    Debug mode: False
+2026-06-25 17:59:52 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 17:59:52 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 17:59:52 | INFO     | app.main | ============================================================
+2026-06-25 17:59:52 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 17:59:52 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 17:59:52 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 17:59:52 | INFO     | app.main | ============================================================
+2026-06-25 18:00:34 | INFO     | app.routers.documents | POST /documents/upload — Received 1 file(s)
+2026-06-25 18:00:34 | INFO     | app.routers.documents | Processing file: Ojal Biodata.pdf
+2026-06-25 18:00:34 | INFO     | app.routers.documents | Saved uploaded file to: uploads/f5d12d9f_Ojal Biodata.pdf (5466781 bytes)
+2026-06-25 18:00:34 | INFO     | app.routers.documents | Extracted pages from Ojal Biodata.pdf
+2026-06-25 18:00:34 | INFO     | app.routers.documents | Created 3 chunks from Ojal Biodata.pdf
+2026-06-25 18:00:36 | INFO     | app.routers.documents | Generated 3 embeddings for Ojal Biodata.pdf
+2026-06-25 18:00:36 | INFO     | app.routers.documents | Stored 3 vectors in ChromaDB for document 1
+2026-06-25 18:00:36 | INFO     | app.routers.documents | ✅ Successfully processed: Ojal Biodata.pdf → Document ID: 1, Chunks: 3
+2026-06-25 18:00:36 | INFO     | app.routers.documents | Upload complete — 1 succeeded, 0 failed
+2026-06-25 18:01:26 | INFO     | app.routers.documents | GET /documents — Listing all documents
+2026-06-25 18:01:26 | INFO     | app.routers.documents | Returning 1 document(s)
+2026-06-25 18:01:33 | INFO     | app.routers.documents | GET /documents — Listing all documents
+2026-06-25 18:01:33 | INFO     | app.routers.documents | Returning 1 document(s)
+2026-06-25 18:01:52 | INFO     | app.routers.documents | GET /documents/1 — Fetching document details
+2026-06-25 18:02:56 | WARNING  | app.main | Validation error on /qa/ask: Validation error on field 'body → 85': JSON decode error
+2026-06-25 18:04:26 | INFO     | app.routers.qa | POST /qa/ask — Question: 'What are the key findings in the report?...' (stream=False, session=a1b2c3d4-e5f6-7890-abcd-ef1234567890)
+2026-06-25 18:04:26 | WARNING  | app.routers.qa | Session 'a1b2c3d4-e5f6-7890-abcd-ef1234567890' not found — creating a new session with this ID
+2026-06-25 18:04:26 | INFO     | app.routers.qa | Created new chat session: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+2026-06-25 18:04:26 | INFO     | app.routers.qa | Loaded 0 messages from session a1b2c3d4-e5f6-7890-abcd-ef1234567890
+2026-06-25 18:04:32 | INFO     | app.routers.qa | ✅ Answer generated — 2329 chars, 3 sources, session: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+2026-06-25 18:05:15 | INFO     | app.routers.qa | POST /qa/ask — Question: 'Name al the Brothers listed in the profile?...' (stream=False, session=a1b2c3d4-e5f6-7890-abcd-ef1234567890)
+2026-06-25 18:05:15 | INFO     | app.routers.qa | Resuming existing chat session: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+2026-06-25 18:05:15 | INFO     | app.routers.qa | Loaded 2 messages from session a1b2c3d4-e5f6-7890-abcd-ef1234567890
+2026-06-25 18:05:18 | INFO     | app.routers.qa | ✅ Answer generated — 200 chars, 3 sources, session: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+2026-06-25 18:06:08 | INFO     | app.routers.chat | GET /chat/sessions — Listing all chat sessions
+2026-06-25 18:06:08 | INFO     | app.routers.chat | Returning 1 chat session(s)
+2026-06-25 18:06:56 | INFO     | app.routers.chat | GET /chat/sessions/a1b2c3d4-e5f6-7890-abcd-ef1234567890 — Fetching session history
+2026-06-25 18:06:56 | ERROR    | app.routers.chat | Failed to fetch session a1b2c3d4-e5f6-7890-abcd-ef1234567890: 3 validation errors for ChatMessageResponse
+sources.0.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 0.9464}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+sources.1.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 1.0267}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+sources.2.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 1.0321}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+Traceback (most recent call last):
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/app/routers/chat.py", line 166, in get_session_history
+    ChatMessageResponse(
+    ~~~~~~~~~~~~~~~~~~~^
+        id=msg.id,
+        ^^^^^^^^^^
+    ...<3 lines>...
+        created_at=msg.created_at.isoformat(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/venv/lib/python3.14/site-packages/pydantic/main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for ChatMessageResponse
+sources.0.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 0.9464}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+sources.1.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 1.0267}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+sources.2.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 1.0321}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+2026-06-25 18:06:56 | WARNING  | app.main | HTTP 500 on /chat/sessions/a1b2c3d4-e5f6-7890-abcd-ef1234567890: Failed to retrieve chat history: 3 validation errors for ChatMessageResponse
+sources.0.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 0.9464}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+sources.1.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 1.0267}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+sources.2.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 1.0321}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+2026-06-25 18:07:36 | INFO     | app.routers.chat | GET /chat/sessions/New Chat — Fetching session history
+2026-06-25 18:07:36 | WARNING  | app.routers.chat | Chat session not found: New Chat
+2026-06-25 18:07:36 | WARNING  | app.main | HTTP 404 on /chat/sessions/New Chat: Chat session 'New Chat' not found.
+2026-06-25 18:07:43 | INFO     | app.routers.chat | GET /chat/sessions/a1b2c3d4-e5f6-7890-abcd-ef1234567890 — Fetching session history
+2026-06-25 18:07:43 | ERROR    | app.routers.chat | Failed to fetch session a1b2c3d4-e5f6-7890-abcd-ef1234567890: 3 validation errors for ChatMessageResponse
+sources.0.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 0.9464}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+sources.1.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 1.0267}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+sources.2.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 1.0321}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+Traceback (most recent call last):
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/app/routers/chat.py", line 166, in get_session_history
+    ChatMessageResponse(
+    ~~~~~~~~~~~~~~~~~~~^
+        id=msg.id,
+        ^^^^^^^^^^
+    ...<3 lines>...
+        created_at=msg.created_at.isoformat(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/venv/lib/python3.14/site-packages/pydantic/main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for ChatMessageResponse
+sources.0.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 0.9464}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+sources.1.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 1.0267}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+sources.2.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 1.0321}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+2026-06-25 18:07:43 | WARNING  | app.main | HTTP 500 on /chat/sessions/a1b2c3d4-e5f6-7890-abcd-ef1234567890: Failed to retrieve chat history: 3 validation errors for ChatMessageResponse
+sources.0.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 0.9464}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+sources.1.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 1.0267}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+sources.2.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 1.0321}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+2026-06-25 18:10:33 | INFO     | app.main | ============================================================
+2026-06-25 18:10:33 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-25 18:10:33 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-25 18:10:33 | INFO     | app.main | ============================================================
+2026-06-25 18:10:34 | INFO     | app.main | ============================================================
+2026-06-25 18:10:34 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-25 18:10:34 | INFO     | app.main |    Debug mode: False
+2026-06-25 18:10:34 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-25 18:10:34 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-25 18:10:34 | INFO     | app.main | ============================================================
+2026-06-25 18:10:34 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-25 18:10:34 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-25 18:10:34 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-25 18:10:34 | INFO     | app.main | ============================================================
+2026-06-25 22:02:36 | INFO     | app.routers.chat | GET /chat/sessions/a1b2c3d4-e5f6-7890-abcd-ef1234567890 — Fetching session history
+2026-06-25 22:02:36 | ERROR    | app.routers.chat | Failed to fetch session a1b2c3d4-e5f6-7890-abcd-ef1234567890: 3 validation errors for ChatMessageResponse
+sources.0.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 0.9464}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+sources.1.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 1.0267}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+sources.2.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 1.0321}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+Traceback (most recent call last):
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/app/routers/chat.py", line 166, in get_session_history
+    ChatMessageResponse(
+    ~~~~~~~~~~~~~~~~~~~^
+        id=msg.id,
+        ^^^^^^^^^^
+    ...<3 lines>...
+        created_at=msg.created_at.isoformat(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/venv/lib/python3.14/site-packages/pydantic/main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for ChatMessageResponse
+sources.0.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 0.9464}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+sources.1.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 1.0267}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+sources.2.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 1.0321}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+2026-06-25 22:02:36 | WARNING  | app.main | HTTP 500 on /chat/sessions/a1b2c3d4-e5f6-7890-abcd-ef1234567890: Failed to retrieve chat history: 3 validation errors for ChatMessageResponse
+sources.0.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 0.9464}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+sources.1.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 1.0267}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+sources.2.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 1.0321}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+2026-06-25 22:03:41 | INFO     | app.routers.chat | GET /chat/sessions/a1b2c3d4-e5f6-7890-abcd-ef1234567890 — Fetching session history
+2026-06-25 22:03:41 | ERROR    | app.routers.chat | Failed to fetch session a1b2c3d4-e5f6-7890-abcd-ef1234567890: 3 validation errors for ChatMessageResponse
+sources.0.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 0.9464}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+sources.1.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 1.0267}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+sources.2.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 1.0321}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+Traceback (most recent call last):
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/app/routers/chat.py", line 166, in get_session_history
+    ChatMessageResponse(
+    ~~~~~~~~~~~~~~~~~~~^
+        id=msg.id,
+        ^^^^^^^^^^
+    ...<3 lines>...
+        created_at=msg.created_at.isoformat(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ojas/Desktop/Projects/IR INFOTECH/R2/venv/lib/python3.14/site-packages/pydantic/main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 3 validation errors for ChatMessageResponse
+sources.0.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 0.9464}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+sources.1.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 1.0267}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+sources.2.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 1.0321}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+2026-06-25 22:03:41 | WARNING  | app.main | HTTP 500 on /chat/sessions/a1b2c3d4-e5f6-7890-abcd-ef1234567890: Failed to retrieve chat history: 3 validation errors for ChatMessageResponse
+sources.0.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 0.9464}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+sources.1.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 1.0267}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+sources.2.document_name
+  Field required [type=missing, input_value={'document_id': 1, 'page_...elevance_score': 1.0321}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+2026-06-26 14:52:44 | INFO     | app.routers.documents | POST /documents/upload — Received 1 file(s)
+2026-06-26 14:52:45 | INFO     | app.routers.documents | Processing file: MIM TOP UNI.pdf
+2026-06-26 14:52:45 | INFO     | app.routers.documents | Saved uploaded file to: uploads/e9e17d1a_MIM TOP UNI.pdf (31397 bytes)
+2026-06-26 14:52:45 | INFO     | app.routers.documents | Extracted pages from MIM TOP UNI.pdf
+2026-06-26 14:52:45 | INFO     | app.routers.documents | Created 7 chunks from MIM TOP UNI.pdf
+2026-06-26 14:52:50 | INFO     | app.routers.documents | Generated 7 embeddings for MIM TOP UNI.pdf
+2026-06-26 14:52:50 | INFO     | app.routers.documents | Stored 7 vectors in ChromaDB for document 2
+2026-06-26 14:52:50 | INFO     | app.routers.documents | ✅ Successfully processed: MIM TOP UNI.pdf → Document ID: 2, Chunks: 7
+2026-06-26 14:52:50 | INFO     | app.routers.documents | Upload complete — 1 succeeded, 0 failed
+2026-06-26 14:53:34 | INFO     | app.routers.documents | GET /documents — Listing all documents
+2026-06-26 14:53:34 | INFO     | app.routers.documents | Returning 2 document(s)
+2026-06-26 14:54:04 | INFO     | app.routers.documents | GET /documents/2 — Fetching document details
+2026-06-26 14:54:23 | INFO     | app.routers.documents | DELETE /documents/1 — Deleting document
+2026-06-26 14:54:23 | INFO     | app.routers.documents | Deleted vectors for document 1 from ChromaDB
+2026-06-26 14:54:23 | INFO     | app.routers.documents | Deleted file: uploads/f5d12d9f_Ojal Biodata.pdf
+2026-06-26 14:54:23 | INFO     | app.routers.documents | ✅ Successfully deleted document 1
+2026-06-26 14:54:41 | INFO     | app.routers.documents | GET /documents — Listing all documents
+2026-06-26 14:54:41 | INFO     | app.routers.documents | Returning 1 document(s)
+2026-06-26 14:55:22 | INFO     | app.routers.qa | POST /qa/ask — Question: 'what is the summary of the document uploaded?...' (stream=False, session=a1b2c3d4-e5f6-7890-abcd-ef1234567890)
+2026-06-26 14:55:22 | WARNING  | app.routers.qa | Session 'a1b2c3d4-e5f6-7890-abcd-ef1234567890' not found — creating a new session with this ID
+2026-06-26 14:55:22 | INFO     | app.routers.qa | Created new chat session: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+2026-06-26 14:55:22 | INFO     | app.routers.qa | Loaded 0 messages from session a1b2c3d4-e5f6-7890-abcd-ef1234567890
+2026-06-26 14:55:39 | INFO     | app.routers.qa | ✅ Answer generated — 2656 chars, 5 sources, session: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+2026-06-26 14:56:16 | INFO     | app.routers.chat | GET /chat/sessions — Listing all chat sessions
+2026-06-26 14:56:16 | INFO     | app.routers.chat | Returning 1 chat session(s)
+2026-06-26 14:56:43 | INFO     | app.routers.chat | GET /chat/sessions/a1b2c3d4-e5f6-7890-abcd-ef1234567890 — Fetching session history
+2026-06-26 14:56:43 | INFO     | app.routers.chat | Returning 2 messages for session a1b2c3d4-e5f6-7890-abcd-ef1234567890
+2026-06-26 14:58:12 | INFO     | app.routers.chat | DELETE /chat/sessions/a1b2c3d4-e5f6-7890-abcd-ef1234567890 — Deleting session
+2026-06-26 14:58:12 | INFO     | app.routers.chat | ✅ Deleted chat session: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+2026-06-26 14:58:51 | INFO     | app.main | Health check called
+2026-06-26 16:01:25 | INFO     | app.main | ============================================================
+2026-06-26 16:01:25 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-26 16:01:25 | INFO     | app.main |    Debug mode: False
+2026-06-26 16:01:25 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-26 16:01:25 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-26 16:01:25 | INFO     | app.main | ============================================================
+2026-06-26 16:01:25 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-26 16:01:25 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-26 16:01:25 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-26 16:01:25 | INFO     | app.main | ============================================================
+2026-06-26 16:01:26 | INFO     | app.main | ============================================================
+2026-06-26 16:01:26 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-26 16:01:26 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-26 16:01:26 | INFO     | app.main | ============================================================
+2026-06-26 16:01:27 | INFO     | app.main | ============================================================
+2026-06-26 16:01:27 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-26 16:01:27 | INFO     | app.main |    Debug mode: False
+2026-06-26 16:01:27 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-26 16:01:27 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-26 16:01:27 | INFO     | app.main | ============================================================
+2026-06-26 16:01:27 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-26 16:01:27 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-26 16:01:27 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-26 16:01:27 | INFO     | app.main | ============================================================
+2026-06-26 16:01:31 | INFO     | app.main | ============================================================
+2026-06-26 16:01:31 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-26 16:01:31 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-26 16:01:31 | INFO     | app.main | ============================================================
+2026-06-26 16:01:33 | INFO     | app.main | ============================================================
+2026-06-26 16:01:33 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-26 16:01:33 | INFO     | app.main |    Debug mode: False
+2026-06-26 16:01:33 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-26 16:01:33 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-26 16:01:33 | INFO     | app.main | ============================================================
+2026-06-26 16:01:33 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-26 16:01:33 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-26 16:01:33 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-26 16:01:33 | INFO     | app.main | ============================================================
+2026-06-26 16:01:33 | INFO     | app.main | ============================================================
+2026-06-26 16:01:33 | INFO     | app.main | 🛑 Shutting down RAG Document Assistant...
+2026-06-26 16:01:33 | INFO     | app.main |    Closing connections and cleaning up resources
+2026-06-26 16:01:33 | INFO     | app.main | ============================================================
+2026-06-26 16:01:34 | INFO     | app.main | ============================================================
+2026-06-26 16:01:34 | INFO     | app.main | 🚀 Starting IR Infotech RAG Assistant v1.0.0
+2026-06-26 16:01:34 | INFO     | app.main |    Debug mode: False
+2026-06-26 16:01:34 | INFO     | app.main |    Database:   sqlite:///./rag_assistant.db
+2026-06-26 16:01:34 | INFO     | app.main |    ChromaDB:   chroma_data
+2026-06-26 16:01:34 | INFO     | app.main | ============================================================
+2026-06-26 16:01:34 | INFO     | app.main | ✅ Database tables created/verified
+2026-06-26 16:01:34 | INFO     | app.main | ✅ Upload directory ready: uploads
+2026-06-26 16:01:34 | INFO     | app.main | ✅ All services initialized — API is ready to accept requests!
+2026-06-26 16:01:34 | INFO     | app.main | ============================================================

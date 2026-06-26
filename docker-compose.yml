@@ -1,0 +1,35 @@
+# =============================================
+# R2 — RAG Document Assistant Docker Compose
+# =============================================
+# Run with: docker-compose up --build
+
+version: "3.9"
+
+services:
+  rag-assistant:
+    build:
+      context: ..
+      dockerfile: R2/Dockerfile
+    container_name: rag-assistant
+    ports:
+      - "8000:8000"
+    env_file:
+      - ../.env          # Load API keys from project root .env
+    environment:
+      - LOG_LEVEL=INFO
+      - DEBUG=False
+    volumes:
+      - ./uploads:/app/uploads          # Persist uploaded PDFs
+      - ./chroma_data:/app/chroma_data  # Persist vector store
+      - rag_db:/app/data                # Persist SQLite database
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+volumes:
+  rag_db:
+    driver: local
