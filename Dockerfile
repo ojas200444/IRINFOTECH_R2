@@ -1,5 +1,5 @@
 # =============================================
-# R2 — RAG Document Assistant Dockerfile
+# R2 — RAG Document Assistant Dockerfile (Hugging Face Spaces Compatible)
 # =============================================
 # Multi-stage build for a lean production image
 
@@ -13,32 +13,36 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     gcc \
     && rm -rf /var/lib/apt/lists/*
 
-COPY R2/requirements.txt .
+COPY requirements.txt .
 RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
 
 
 # Stage 2: Runtime — lean final image
 FROM python:3.11-slim
 
-WORKDIR /app
+# Hugging Face Spaces require running as a non-root user (uid 1000)
+RUN useradd -m -u 1000 user
+USER user
+ENV HOME=/home/user \
+    PATH=/home/user/.local/bin:$PATH
+
+WORKDIR $HOME/app
 
 # Copy installed packages from builder
-COPY --from=builder /install /usr/local
+COPY --chown=user --from=builder /install /usr/local
 
-# Copy application code and shared utilities
-COPY R2 /app
-COPY needful /app/needful
+# Copy application code
+COPY --chown=user . $HOME/app
 
-# Create directories for uploads and ChromaDB data
-RUN mkdir -p uploads chroma_data
+# Create directories with appropriate permissions for Hugging Face
+RUN mkdir -p uploads chroma_data && chmod -R 777 uploads chroma_data
 
-# Expose the API port
-EXPOSE 8000
+# Expose the API port (Hugging Face Spaces defaults to 7860)
+EXPOSE 7860
 
-# Health check — ensures the container is healthy
+# Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
-    CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')" || exit 1
+    CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:7860/health')" || exit 1
 
 # Run the application
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
-
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "7860"]
